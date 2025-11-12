@@ -44,10 +44,13 @@ Theo dõi biến động thực tế (số bệnh nhân, chỉ định, công su
 Đưa ra cảnh báo và điều chỉnh sớm khi khoa nào hoặc nhóm dịch vụ nào chậm nhịp.
 
 🔶 1. Tư duy tổng thể: Mô hình 3 lớp
-Lớp	Mục tiêu	Ví dụ
-Lớp 1: Toàn viện (Top-down)	Giữ mục tiêu tổng doanh thu 1000 tỷ, chia theo quý/tháng	Quý I: 250 tỷ → Tháng ~84 tỷ
-Lớp 2: Theo nhóm khoa (Cluster)	Chia 1000 tỷ theo khối chức năng	Lâm sàng nội trú, Ngoại trú, Cận lâm sàng
-Lớp 3: Theo từng khoa (Department)	Mỗi khoa có “kế hoạch doanh thu động”	Nội Tổng quát 60 tỷ, Ngoại TH 80 tỷ, CLS (X-quang, Xét nghiệm…) 200 tỷ, v.v.
+
+| Lớp                                    | Mục tiêu                                                 | Ví dụ                                                                        |
+| -------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Lớp 1: Toàn viện (Top-down)**        | Giữ mục tiêu tổng doanh thu 1000 tỷ, chia theo quý/tháng | Quý I: 250 tỷ → Tháng ~84 tỷ                                                 |
+| **Lớp 2: Theo nhóm khoa (Cluster)**    | Chia 1000 tỷ theo khối chức năng                         | Lâm sàng nội trú, Ngoại trú, Cận lâm sàng                                    |
+| **Lớp 3: Theo từng khoa (Department)** | Mỗi khoa có “kế hoạch doanh thu động”                    | Nội Tổng quát 60 tỷ, Ngoại TH 80 tỷ, CLS (X-quang, Xét nghiệm…) 200 tỷ, v.v. |
+
 🔶 2. Bước chia logic ban đầu (Top-down)
 Giả sử ta có tổng doanh thu năm 1000 tỷ.
 Có thể chia sơ bộ theo tỷ trọng doanh thu hiện nay của viện (hoặc dự kiến):
