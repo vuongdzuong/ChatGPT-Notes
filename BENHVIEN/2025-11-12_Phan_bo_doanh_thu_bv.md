@@ -55,12 +55,14 @@ Theo dõi biến động thực tế (số bệnh nhân, chỉ định, công su
 Giả sử ta có tổng doanh thu năm 1000 tỷ.
 Có thể chia sơ bộ theo tỷ trọng doanh thu hiện nay của viện (hoặc dự kiến):
 
-Nhóm khoa	Tỷ trọng ước tính	Doanh thu mục tiêu/năm (tỷ)
-Lâm sàng nội trú (10 khoa)	50%	500
-Ngoại trú (5 khoa)	20%	200
-Cận lâm sàng (xét nghiệm, chẩn đoán hình ảnh, thăm dò chức năng)	25%	250
-Khác (dịch vụ, khám sức khỏe, BHYT khác…)	5%	50
-Tổng	100%	1000
+| Nhóm khoa                                                        | Tỷ trọng ước tính | Doanh thu mục tiêu/năm (tỷ) |
+| ---------------------------------------------------------------- | ----------------- | --------------------------- |
+| Lâm sàng nội trú (10 khoa)                                       | 50%               | 500                         |
+| Ngoại trú (5 khoa)                                               | 20%               | 200                         |
+| Cận lâm sàng (xét nghiệm, chẩn đoán hình ảnh, thăm dò chức năng) | 25%               | 250                         |
+| Khác (dịch vụ, khám sức khỏe, BHYT khác…)                        | 5%                | 50                          |
+| **Tổng**                                                         | **100%**          | **1000**                    |
+
 → Sau đó bạn phân bổ doanh thu từng nhóm xuống từng khoa theo tỷ trọng doanh thu trung bình 12 tháng gần nhất (nếu có dữ liệu).
 
 🔶 3. Chia theo thời gian (Time-based Target)
@@ -78,35 +80,41 @@ Nếu chưa có dữ liệu, tạm chia đều (1/12 mỗi tháng) rồi cập n
 🔶 4. Liên kết với chỉ số hoạt động (Bottom-up kiểm tra)
 Đây là phần bạn nói rất chính xác — phải dựa vào các chỉ tiêu hoạt động để kiểm soát doanh thu, chứ không chỉ “chia chỉ tiêu tiền”.
 
-Nhóm chỉ tiêu	Mục đích	Ví dụ tính
-Số BN nhập viện / khám	Nguồn gốc doanh thu	Số BN × DT bình quân / BN
-Số ngày giường	Kiểm soát công suất	Ngày giường × Đơn giá trung bình
-Số chỉ định CLS / thủ thuật / phẫu thuật	Tăng giá trị điều trị	1000 ca XQ × 150k + 500 CT × 1tr + ...
-Thời gian điều trị trung bình	Giữ hợp lý để tránh “giam giường”	Giữ ≤ 7 ngày nếu trung bình bệnh nhẹ
-Tỷ lệ sử dụng giường	Đảm bảo công suất ổn định	>85% là tốt
-Doanh thu trung bình / BN / ngày giường	Đo năng suất khoa	Ví dụ: 3 triệu/BN/ngày
+| Nhóm chỉ tiêu                                | Mục đích                          | Ví dụ tính                             |
+| -------------------------------------------- | --------------------------------- | -------------------------------------- |
+| **Số BN nhập viện / khám**                   | Nguồn gốc doanh thu               | Số BN × DT bình quân / BN              |
+| **Số ngày giường**                           | Kiểm soát công suất               | Ngày giường × Đơn giá trung bình       |
+| **Số chỉ định CLS / thủ thuật / phẫu thuật** | Tăng giá trị điều trị             | 1000 ca XQ × 150k + 500 CT × 1tr + ... |
+| **Thời gian điều trị trung bình**            | Giữ hợp lý để tránh “giam giường” | Giữ ≤ 7 ngày nếu trung bình bệnh nhẹ   |
+| **Tỷ lệ sử dụng giường**                     | Đảm bảo công suất ổn định         | >85% là tốt                            |
+| **Doanh thu trung bình / BN / ngày giường**  | Đo năng suất khoa                 | Ví dụ: 3 triệu/BN/ngày                 |
+
 → Khi theo dõi, bạn sẽ thấy khoa nào tụt doanh thu do thiếu bệnh nhân hay do thiếu chỉ định → can thiệp đúng chỗ.
 
 🔶 5. Tránh “bóp méo hành vi” khi giao chỉ tiêu
 Bạn nói rất hay — nếu chỉ “giao doanh thu”, khoa sẽ “câu bệnh nhân” hoặc “giam giường”.
 Vì vậy, giải pháp là dùng bộ chỉ tiêu tổng hợp gồm:
 
-Nhóm	Chỉ tiêu	Ghi chú
-Tài chính	Doanh thu đạt % kế hoạch	
-Hoạt động	Công suất giường, số ca khám, tỷ lệ quay vòng giường	
-Chất lượng	Tỷ lệ xuất viện đúng hạn, tỷ lệ tái nhập viện	
-Hiệu suất	Doanh thu/giường, Doanh thu/nhân viên	
-Hài lòng BN	Điểm khảo sát (nếu có)	
+| Nhóm            | Chỉ tiêu                                             | Ghi chú |
+| --------------- | ---------------------------------------------------- | ------- |
+| **Tài chính**   | Doanh thu đạt % kế hoạch                             |         |
+| **Hoạt động**   | Công suất giường, số ca khám, tỷ lệ quay vòng giường |         |
+| **Chất lượng**  | Tỷ lệ xuất viện đúng hạn, tỷ lệ tái nhập viện        |         |
+| **Hiệu suất**   | Doanh thu/giường, Doanh thu/nhân viên                |         |
+| **Hài lòng BN** | Điểm khảo sát (nếu có)                               |         |
+	
 → Cách này vừa thúc đẩy doanh thu, vừa duy trì chất lượng điều trị.
 
 🔶 6. Công cụ triển khai (thực hành)
 Bạn có thể thiết kế mô hình theo kiểu Dashboard kế hoạch – thực tế – chênh lệch (Plan vs Actual):
 
-Khoa	Mục tiêu tháng (tỷ)	Thực tế (tỷ)	% hoàn thành	Ghi chú nguyên nhân
-Nội tổng quát	10	8.5	85%	BN giảm 5%
-Ngoại TH	12	13	108%	tăng ca mổ
-Xét nghiệm	15	14.5	97%	ổn định
-CT/MRI	8	7.2	90%	máy bảo trì 3 ngày
+| Khoa          | Mục tiêu tháng (tỷ) | Thực tế (tỷ) | % hoàn thành | Ghi chú nguyên nhân |
+| ------------- | ------------------- | ------------ | ------------ | ------------------- |
+| Nội tổng quát | 10                  | 8.5          | 85%          | BN giảm 5%          |
+| Ngoại TH      | 12                  | 13           | 108%         | tăng ca mổ          |
+| Xét nghiệm    | 15                  | 14.5         | 97%          | ổn định             |
+| CT/MRI        | 8                   | 7.2          | 90%          | máy bảo trì 3 ngày  |
+
 → Khi xuất báo cáo, bạn có thể nhấn mạnh khoa vượt / chưa đạt, đồng thời truy ngược nguyên nhân qua dữ liệu hoạt động.
 
 🔶 7. Hướng đi nâng cao
@@ -119,12 +127,15 @@ Tự động cảnh báo (ví dụ: “Nếu công suất giường duy trì dư
 Làm “heat map” cho lãnh đạo thấy khoa nào đang tăng/giảm đóng góp doanh thu.
 
 ✅ Tóm tắt hướng triển khai cho bạn
-Giai đoạn	Việc cần làm
-B1. Phân tích dữ liệu năm 2024	Tỷ trọng doanh thu theo khoa, theo tháng
-B2. Xây khung kế hoạch 2025 (Top-down)	Chia 1000 tỷ → nhóm khoa → khoa
-B3. Xây dashboard theo dõi (Bottom-up)	Thực tế doanh thu + hoạt động
-B4. Giám sát hàng tháng	Phân tích nguyên nhân chênh lệch
-B5. Báo cáo giám đốc / điều chỉnh kế hoạch	Nếu quý nào vượt/thấp hơn dự kiến
+
+| Giai đoạn                                      | Việc cần làm                             |
+| ---------------------------------------------- | ---------------------------------------- |
+| **B1. Phân tích dữ liệu năm 2024**             | Tỷ trọng doanh thu theo khoa, theo tháng |
+| **B2. Xây khung kế hoạch 2025 (Top-down)**     | Chia 1000 tỷ → nhóm khoa → khoa          |
+| **B3. Xây dashboard theo dõi (Bottom-up)**     | Thực tế doanh thu + hoạt động            |
+| **B4. Giám sát hàng tháng**                    | Phân tích nguyên nhân chênh lệch         |
+| **B5. Báo cáo giám đốc / điều chỉnh kế hoạch** | Nếu quý nào vượt/thấp hơn dự kiến        |
+
 Nếu bạn muốn, mình có thể giúp bạn tạo khung bảng kế hoạch Excel hoặc mô hình SQL để tự động tính:
 
 Kế hoạch năm → quý → tháng → khoa
@@ -153,44 +164,54 @@ Nhập vào SQL để tự động tổng hợp
 Tích hợp dashboard Power BI hoặc SSRS sau này.
 
 🔶 PHẦN 1 – CẤU TRÚC CẤP VIỆN
-Năm	Quý	Tháng	Tổng doanh thu mục tiêu	Doanh thu thực tế	% hoàn thành	Ghi chú
-2025	Q1	1	84.0	80.5	95.8%	-
-2025	Q1	2	83.0	82.2	99.0%	-
-2025	Q1	3	83.0	86.7	104.4%	Tăng ca phẫu thuật
+| Năm  | Quý | Tháng | Tổng doanh thu mục tiêu | Doanh thu thực tế | % hoàn thành | Ghi chú            |
+| ---- | --- | ----- | ----------------------- | ----------------- | ------------ | ------------------ |
+| 2025 | Q1  | 1     | 84.0                    | 80.5              | 95.8%        | -                  |
+| 2025 | Q1  | 2     | 83.0                    | 82.2              | 99.0%        | -                  |
+| 2025 | Q1  | 3     | 83.0                    | 86.7              | 104.4%       | Tăng ca phẫu thuật |
+
 👉 Tổng cộng năm = 1000 tỷ
 Cho phép nhìn toàn viện theo tháng hoặc quý.
 
 🔶 PHẦN 2 – CẤU TRÚC CẤP NHÓM KHOA
-Nhóm khoa	Tỷ trọng mục tiêu (%)	Doanh thu mục tiêu năm (tỷ)	Doanh thu thực tế (tỷ)	% hoàn thành	Ghi chú
-Lâm sàng nội trú	50%	500	475	95%	BN giảm nhẹ
-Ngoại trú	20%	200	210	105%	Tăng lượt khám
-Cận lâm sàng	25%	250	255	102%	CT & MRI tăng
-Dịch vụ khác	5%	50	60	120%	Khám SK định kỳ
-Tổng	100%	1000	1000	100%	
+| Nhóm khoa        | Tỷ trọng mục tiêu (%) | Doanh thu mục tiêu năm (tỷ) | Doanh thu thực tế (tỷ) | % hoàn thành | Ghi chú         |
+| ---------------- | --------------------- | --------------------------- | ---------------------- | ------------ | --------------- |
+| Lâm sàng nội trú | 50%                   | 500                         | 475                    | 95%          | BN giảm nhẹ     |
+| Ngoại trú        | 20%                   | 200                         | 210                    | 105%         | Tăng lượt khám  |
+| Cận lâm sàng     | 25%                   | 250                         | 255                    | 102%         | CT & MRI tăng   |
+| Dịch vụ khác     | 5%                    | 50                          | 60                     | 120%         | Khám SK định kỳ |
+| **Tổng**         | 100%                  | **1000**                    | **1000**               | **100%**     |                 |
+	
 🔶 PHẦN 3 – CẤU TRÚC CẤP KHOA (TRỌNG TÂM)
-Năm	Tháng	Khoa	Nhóm khoa	Mục tiêu doanh thu (tỷ)	Thực tế (tỷ)	% HT	Số BN điều trị	Số ngày giường	Doanh thu/BN (triệu)	Công suất giường (%)	Ghi chú
-2025	1	Nội tổng quát	Nội trú	6.5	6.2	95%	820	5,400	7.6	80%	Giường trống 2 ngày
-2025	1	Ngoại tổng hợp	Ngoại trú	8.0	8.5	106%	540	4,100	15.7	90%	Nhiều ca mổ
-2025	1	Xét nghiệm	CLS	12.0	11.8	98%	3,200	–	3.7	–	Ổn định
-2025	1	Chẩn đoán hình ảnh	CLS	9.0	9.6	107%	1,200	–	8.0	–	Tăng chụp CT
+| Năm  | Tháng | Khoa               | Nhóm khoa | Mục tiêu doanh thu (tỷ) | Thực tế (tỷ) | % HT | Số BN điều trị | Số ngày giường | Doanh thu/BN (triệu) | Công suất giường (%) | Ghi chú             |
+| ---- | ----- | ------------------ | --------- | ----------------------- | ------------ | ---- | -------------- | -------------- | -------------------- | -------------------- | ------------------- |
+| 2025 | 1     | Nội tổng quát      | Nội trú   | 6.5                     | 6.2          | 95%  | 820            | 5,400          | 7.6                  | 80%                  | Giường trống 2 ngày |
+| 2025 | 1     | Ngoại tổng hợp     | Ngoại trú | 8.0                     | 8.5          | 106% | 540            | 4,100          | 15.7                 | 90%                  | Nhiều ca mổ         |
+| 2025 | 1     | Xét nghiệm         | CLS       | 12.0                    | 11.8         | 98%  | 3,200          | –              | 3.7                  | –                    | Ổn định             |
+| 2025 | 1     | Chẩn đoán hình ảnh | CLS       | 9.0                     | 9.6          | 107% | 1,200          | –              | 8.0                  | –                    | Tăng chụp CT        |
+
 ⚙️ Các cột Số BN điều trị, Số ngày giường, Doanh thu/BN, Công suất giường cho phép bạn truy nguyên nguyên nhân doanh thu tăng/giảm.
 
 🔶 PHẦN 4 – CẤU TRÚC CHỈ TIÊU HOẠT ĐỘNG (CÓ THỂ GẮN VỚI DOANH THU)
-Khoa	Nhóm chỉ định	Chỉ tiêu hoạt động	Giá trị trung bình (nghìn đồng)	Số lượng tháng	Doanh thu ước tính (tỷ)
-Xét nghiệm	Xét nghiệm sinh hóa	150	45,000	6.75	
-Xét nghiệm	Miễn dịch	350	10,000	3.5	
-CĐHA	X-quang	120	30,000	3.6	
-CĐHA	CT Scanner	1,200	2,500	3.0	
-CĐHA	MRI	2,500	1,000	2.5	
+| Khoa       | Nhóm chỉ định       | Chỉ tiêu hoạt động | Giá trị trung bình (nghìn đồng) | Số lượng tháng | Doanh thu ước tính (tỷ) |
+| ---------- | ------------------- | ------------------ | ------------------------------- | -------------- | ----------------------- |
+| Xét nghiệm | Xét nghiệm sinh hóa | 150                | 45,000                          | 6.75           |                         |
+| Xét nghiệm | Miễn dịch           | 350                | 10,000                          | 3.5            |                         |
+| CĐHA       | X-quang             | 120                | 30,000                          | 3.6            |                         |
+| CĐHA       | CT Scanner          | 1,200              | 2,500                           | 3.0            |                         |
+| CĐHA       | MRI                 | 2,500              | 1,000                           | 2.5            |                         |
+	
 → Tổng cộng nhóm này có thể dự báo doanh thu ước tính ≈ 18.35 tỷ/tháng.
 Bạn có thể cộng dồn toàn viện để so với mục tiêu tổng.
 
 🔶 PHẦN 5 – BẢNG SO SÁNH / CẢNH BÁO TỰ ĐỘNG
-Khoa	Mục tiêu (tỷ)	Thực tế (tỷ)	% HT	Cảnh báo
-Nội tổng quát	6.5	6.2	95%	⚠️ Dưới 97%
-Ngoại tổng hợp	8.0	8.5	106%	✅ Tốt
-CĐHA	9.0	9.6	107%	✅
-Xét nghiệm	12.0	11.8	98%	⚠️
+| Khoa           | Mục tiêu (tỷ) | Thực tế (tỷ) | % HT | Cảnh báo    |
+| -------------- | ------------- | ------------ | ---- | ----------- |
+| Nội tổng quát  | 6.5           | 6.2          | 95%  | ⚠️ Dưới 97% |
+| Ngoại tổng hợp | 8.0           | 8.5          | 106% | ✅ Tốt       |
+| CĐHA           | 9.0           | 9.6          | 107% | ✅           |
+| Xét nghiệm     | 12.0          | 11.8         | 98%  | ⚠️          |
+
 → Có thể gắn Conditional Formatting trong Excel để tô màu:
 
 <95% → đỏ
@@ -230,6 +251,7 @@ CREATE TABLE thucteDoanhThu (
     SoNgayGiuong INT,
     PRIMARY KEY (Nam, Thang, MaKhoa)
 );
+
 → Sau đó bạn có thể JOIN để ra bảng tổng hợp Plan vs Actual, tính % hoàn thành, v.v.
 
 🔶 PHẦN 7 – NHÌN DƯỚI GÓC “QUẢN TRỊ”
@@ -284,27 +306,33 @@ Xây dựng công thức kiểu như sau (cho từng khoa hoặc toàn viện):
 A. Thông tin đầu ra (biến phụ thuộc)
 Đây là cái bạn muốn dự báo — doanh thu.
 
-Biến	Mô tả	Đơn vị	Ghi chú
-DoanhThu	Doanh thu thực tế của khoa/tháng	Tỷ đồng hoặc triệu đồng	Dữ liệu quá khứ 12–24 tháng là lý tưởng
+| Biến       | Mô tả                            | Đơn vị                  | Ghi chú                                 |
+| ---------- | -------------------------------- | ----------------------- | --------------------------------------- |
+| `DoanhThu` | Doanh thu thực tế của khoa/tháng | Tỷ đồng hoặc triệu đồng | Dữ liệu quá khứ 12–24 tháng là lý tưởng |
+
 B. Các biến đầu vào (biến độc lập)
 Là những yếu tố ảnh hưởng trực tiếp đến doanh thu, mà bạn có thể đo được trong hệ thống.
 
-Nhóm yếu tố	Ví dụ biến	Ghi chú
-Hoạt động bệnh nhân	SoBenhNhanNoiTru, SoBenhNhanNgoaiTru	Số lượt/tháng
-Công suất sử dụng giường	TyLeSuDungGiuong, SoNgayGiuong	% hoặc số ngày
-Hiệu suất điều trị	SoNgayDieuTriTB, TyLeXuatVienDungHan	Kiểm soát thời gian nằm viện
-Chỉ định kỹ thuật	SoChiDinhXN, SoChiDinhXQuang, SoChiDinhCT, SoChiDinhMRI, SoThuThuat, SoPhauThuat	Tổng số lần thực hiện
-Đơn giá trung bình	DoanhThuTrungBinhMotBenhNhan, DoanhThuTrungBinhMotNgayGiuong	Có thể nội suy từ dữ liệu cũ
-Công suất nhân lực / ca làm việc	SoBS, SoDieuDuong, SoCaTruc	(nếu có) – để đo hiệu năng
-Mùa vụ	Thang, Quy, Mua	Gắn thêm biến để mô hình nhận biết mùa cao điểm/thấp điểm
+| Nhóm yếu tố                          | Ví dụ biến                                                                                   | Ghi chú                                                   |
+| ------------------------------------ | -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| **Hoạt động bệnh nhân**              | `SoBenhNhanNoiTru`, `SoBenhNhanNgoaiTru`                                                     | Số lượt/tháng                                             |
+| **Công suất sử dụng giường**         | `TyLeSuDungGiuong`, `SoNgayGiuong`                                                           | % hoặc số ngày                                            |
+| **Hiệu suất điều trị**               | `SoNgayDieuTriTB`, `TyLeXuatVienDungHan`                                                     | Kiểm soát thời gian nằm viện                              |
+| **Chỉ định kỹ thuật**                | `SoChiDinhXN`, `SoChiDinhXQuang`, `SoChiDinhCT`, `SoChiDinhMRI`, `SoThuThuat`, `SoPhauThuat` | Tổng số lần thực hiện                                     |
+| **Đơn giá trung bình**               | `DoanhThuTrungBinhMotBenhNhan`, `DoanhThuTrungBinhMotNgayGiuong`                             | Có thể nội suy từ dữ liệu cũ                              |
+| **Công suất nhân lực / ca làm việc** | `SoBS`, `SoDieuDuong`, `SoCaTruc`                                                            | (nếu có) – để đo hiệu năng                                |
+| **Mùa vụ**                           | `Thang`, `Quy`, `Mua`                                                                        | Gắn thêm biến để mô hình nhận biết mùa cao điểm/thấp điểm |
+
 👉 Mỗi dòng dữ liệu nên thể hiện 1 khoa / 1 tháng.
 
 🔶 2. CẤU TRÚC DỮ LIỆU MẪU (để hồi quy)
-Năm	Tháng	Khoa	DoanhThu	SoBenhNhan	SoNgayGiuong	CLS	ThuThuat	PhauThuat	CongSuatGiuong	DoanhThuTrungBinhBN
-2024	1	Nội tổng quát	6.5	820	5400	2000	250	20	0.85	7.6
-2024	2	Nội tổng quát	6.2	780	5200	1800	200	18	0.80	7.9
-2024	3	Nội tổng quát	6.8	860	5600	2200	260	22	0.87	7.9
-…	…	…	…	…	…	…	…	…	…	…
+| Năm  | Tháng | Khoa          | DoanhThu | SoBenhNhan | SoNgayGiuong | CLS  | ThuThuat | PhauThuat | CongSuatGiuong | DoanhThuTrungBinhBN |
+| ---- | ----- | ------------- | -------- | ---------- | ------------ | ---- | -------- | --------- | -------------- | ------------------- |
+| 2024 | 1     | Nội tổng quát | 6.5      | 820        | 5400         | 2000 | 250      | 20        | 0.85           | 7.6                 |
+| 2024 | 2     | Nội tổng quát | 6.2      | 780        | 5200         | 1800 | 200      | 18        | 0.80           | 7.9                 |
+| 2024 | 3     | Nội tổng quát | 6.8      | 860        | 5600         | 2200 | 260      | 22        | 0.87           | 7.9                 |
+| …    | …     | …             | …        | …          | …            | …    | …        | …         | …              | …                   |
+
 🔶 3. BƯỚC XÂY DỰNG MÔ HÌNH HỒI QUY
 ⚙️ Bước 1. Chuẩn bị dữ liệu
 Gộp dữ liệu của 12–24 tháng gần nhất.
@@ -342,11 +370,13 @@ Ví dụ:
 
 Doanh thu dự báo = 0.5 + 0.006*(Số BN) + 0.0012*(CLS) + 0.02*(Phẫu thuật)
 🔶 4. LỢI ÍCH THỰC TẾ
-Mục tiêu	Ý nghĩa
-📈 Dự báo sớm doanh thu tháng tới	Nếu dữ liệu BN, CLS có xu hướng giảm → biết sớm để can thiệp
-⚙️ Phân tích độ nhạy	Xác định yếu tố nào ảnh hưởng mạnh nhất đến doanh thu (để tập trung nguồn lực)
-🔍 Đo hiệu quả cải tiến	Sau khi tăng số CLS 10%, mô hình cho thấy doanh thu tăng thực bao nhiêu
-🎯 Gắn KPI khoa học	Không cần giao chỉ tiêu cứng, mà dựa theo hiệu suất dự báo
+| Mục tiêu                          | Ý nghĩa                                                                        |
+| --------------------------------- | ------------------------------------------------------------------------------ |
+| 📈 Dự báo sớm doanh thu tháng tới | Nếu dữ liệu BN, CLS có xu hướng giảm → biết sớm để can thiệp                   |
+| ⚙️ Phân tích độ nhạy              | Xác định yếu tố nào ảnh hưởng mạnh nhất đến doanh thu (để tập trung nguồn lực) |
+| 🔍 Đo hiệu quả cải tiến           | Sau khi tăng số CLS 10%, mô hình cho thấy doanh thu tăng thực bao nhiêu        |
+| 🎯 Gắn KPI khoa học               | Không cần giao chỉ tiêu cứng, mà dựa theo hiệu suất dự báo                     |
+
 🔶 5. MỞ RỘNG NẾU DỮ LIỆU CHO PHÉP
 Nếu sau này bạn thu thập đủ dữ liệu, có thể:
 
@@ -361,23 +391,27 @@ Tạo biểu đồ “đóng góp doanh thu”: mỗi yếu tố đóng góp bao
 🔶 6. GỢI Ý THỰC TẾ CHO GIAI ĐOẠN ĐẦU
 Bạn chỉ cần thu thập đủ 6 biến chính này là đã có thể chạy mô hình cơ bản:
 
-Biến	Giải thích
-DoanhThu	Doanh thu/tháng/khoa
-SoBenhNhan	Số bệnh nhân/tháng/khoa
-SoNgayGiuong	Tổng ngày giường thực tế
-CLS	Tổng số lượt chỉ định CLS
-PhauThuat	Số ca phẫu thuật/tháng
-CongSuatGiuong	Công suất trung bình tháng (%)
+| Biến             | Giải thích                     |
+| ---------------- | ------------------------------ |
+| `DoanhThu`       | Doanh thu/tháng/khoa           |
+| `SoBenhNhan`     | Số bệnh nhân/tháng/khoa        |
+| `SoNgayGiuong`   | Tổng ngày giường thực tế       |
+| `CLS`            | Tổng số lượt chỉ định CLS      |
+| `PhauThuat`      | Số ca phẫu thuật/tháng         |
+| `CongSuatGiuong` | Công suất trung bình tháng (%) |
+
 → Chỉ với 12 tháng dữ liệu (360 dòng nếu có 30 khoa) là đủ để chạy mô hình đầu tiên.
 
 ✅ TÓM TẮT HƯỚNG THỰC HIỆN
-Giai đoạn	Việc cần làm
-1. Thu thập dữ liệu	Lấy dữ liệu 12–24 tháng: doanh thu, BN, CLS, ngày giường, công suất
-2. Chuẩn hóa dữ liệu	Đưa về cùng định dạng, theo khoa & tháng
-3. Chạy hồi quy thử	Dùng Excel hoặc Python để ra hệ số
-4. Đánh giá mô hình	R², p-value, độ phù hợp
-5. Ứng dụng	Dự báo doanh thu tháng tới hoặc quý tới
-6. Cải tiến	Bổ sung biến chi tiết hơn (loại bệnh, kỹ thuật, thời vụ)
+| Giai đoạn                | Việc cần làm                                                        |
+| ------------------------ | ------------------------------------------------------------------- |
+| **1. Thu thập dữ liệu**  | Lấy dữ liệu 12–24 tháng: doanh thu, BN, CLS, ngày giường, công suất |
+| **2. Chuẩn hóa dữ liệu** | Đưa về cùng định dạng, theo khoa & tháng                            |
+| **3. Chạy hồi quy thử**  | Dùng Excel hoặc Python để ra hệ số                                  |
+| **4. Đánh giá mô hình**  | R², p-value, độ phù hợp                                             |
+| **5. Ứng dụng**          | Dự báo doanh thu tháng tới hoặc quý tới                             |
+| **6. Cải tiến**          | Bổ sung biến chi tiết hơn (loại bệnh, kỹ thuật, thời vụ)            |
+
 👉 Nếu bạn muốn, mình có thể giúp bạn xây cấu trúc bảng dữ liệu mẫu (Excel hoặc SQL) đúng chuẩn cho hồi quy này — tức là các cột, định dạng, và công thức gợi ý để nhập dữ liệu thực.
 Bạn có muốn mình tạo bảng khung mẫu cho dữ liệu hồi quy luôn không (để bạn bắt đầu thu thập ngay)?
 
@@ -446,18 +480,20 @@ Mục tiêu khác = 1.000 × 5,26% = 52,6 tỷ
 3) Chia tiếp xuống từng khoa (ví dụ nội trú có 10 khoa)
 Giả sử trong 2024, doanh thu 10 khoa nội trú như sau (giả sử, tổng = 480 tỷ):
 
-Khoa	Doanh thu 2024 (tỷ)
-A	120
-B	80
-C	60
-D	40
-E	30
-F	25
-G	25
-H	40
-I	25
-J	35
-Tổng nội trú	480
+| Khoa             | Doanh thu 2024 (tỷ) |
+| ---------------- | ------------------- |
+| A                | 120                 |
+| B                | 80                  |
+| C                | 60                  |
+| D                | 40                  |
+| E                | 30                  |
+| F                | 25                  |
+| G                | 25                  |
+| H                | 40                  |
+| I                | 25                  |
+| J                | 35                  |
+| **Tổng nội trú** | **480**             |
+
 Tỷ trọng từng khoa trong khối:
 
 Tỷ trọng Khoa A = 120 / 480 = 25%
@@ -607,18 +643,20 @@ Khác 2025 = 1.000 × 5,26% = 52,6 tỷ
 4) Chia tiếp xuống từng khoa (ví dụ nội trú có 10 khoa — số giả)
 Giả sử doanh thu 2024 của 10 khoa nội trú (tổng = 480 tỷ):
 
-Khoa	DT2024 (tỷ)
-A	120
-B	80
-C	60
-D	40
-E	30
-F	25
-G	25
-H	40
-I	25
-J	35
-Tổng nội trú	480
+|             Khoa | DT2024 (tỷ) |
+| ---------------: | ----------: |
+|                A |         120 |
+|                B |          80 |
+|                C |          60 |
+|                D |          40 |
+|                E |          30 |
+|                F |          25 |
+|                G |          25 |
+|                H |          40 |
+|                I |          25 |
+|                J |          35 |
+| **Tổng nội trú** |     **480** |
+
 Tỷ trọng Khoa A trong khối nội trú = 120 / 480 = 25%
 → Mục tiêu Khoa A 2025 = Mục tiêu nội trú 2025 × 25% = 505.3 × 25% = 126.325 tỷ
 
@@ -785,11 +823,13 @@ Một biến cố (COVID, dịch bệnh, chính sách BHYT mới...).
 🧮 1. Trung bình cộng nhiều năm (simple average)
 Giả sử bạn có doanh thu 3 năm gần nhất:
 
-Khoa	2022 (tỷ)	2023 (tỷ)	2024 (tỷ)
-Nội trú	450	470	480
-Ngoại trú	180	190	200
-CLS	200	210	220
-Khác	40	45	50
+| Khoa      | 2022 (tỷ) | 2023 (tỷ) | 2024 (tỷ) |
+| --------- | --------- | --------- | --------- |
+| Nội trú   | 450       | 470       | 480       |
+| Ngoại trú | 180       | 190       | 200       |
+| CLS       | 200       | 210       | 220       |
+| Khác      | 40        | 45        | 50        |
+
 Tổng từng năm:
 
 2022: 870
@@ -883,10 +923,12 @@ Sau khi có tỷ trọng trung bình hoặc có trọng số, bạn nhân với 
 
 =MucTieuToanVien2025 * TyTrongTrungBinh
 ✅ Tóm tắt ngắn gọn
-Phương pháp	Công thức	Khi nên dùng
-Trung bình đơn giản	(Tỷ trọng năm 1 + năm 2 + năm 3)/3	Dữ liệu ổn định
-Trung bình có trọng số	(Tỷ trọng1×1 + Tỷ trọng2×2 + Tỷ trọng3×3)/(1+2+3)	Muốn phản ánh xu hướng gần nhất
-Trung bình bỏ năm bất thường	Bỏ năm “dị biệt” trước khi tính	Khi có dịch, sửa chữa, hoặc biến cố
+| Phương pháp                  | Công thức                                         | Khi nên dùng                        |
+| ---------------------------- | ------------------------------------------------- | ----------------------------------- |
+| Trung bình đơn giản          | (Tỷ trọng năm 1 + năm 2 + năm 3)/3                | Dữ liệu ổn định                     |
+| Trung bình có trọng số       | (Tỷ trọng1×1 + Tỷ trọng2×2 + Tỷ trọng3×3)/(1+2+3) | Muốn phản ánh xu hướng gần nhất     |
+| Trung bình bỏ năm bất thường | Bỏ năm “dị biệt” trước khi tính                   | Khi có dịch, sửa chữa, hoặc biến cố |
+
 Nếu bạn muốn, mình có thể giúp thêm sheet “Tính tỷ trọng trung bình 3 năm” vào file Excel bạn đang dùng, có cả công thức tự động tính tỷ trọng đơn giản và có trọng số cho từng khoa.
 Bạn có muốn mình thêm sheet này (vẫn dùng số giả) để bạn thử luôn không?
 
@@ -916,19 +958,21 @@ Sau này có thể dùng làm nguồn cho mô hình hồi quy (DoanhThu ≈ f(Be
 🧱 Cấu trúc bảng dữ liệu mẫu
 Tên sheet: RegressionData_2025
 
-Cột	Kiểu dữ liệu	Mô tả	Ví dụ
-ThangNam	Date / Text	Tháng ghi nhận	2025-01
-Khoa	Text	Tên khoa	Ngoại tổng hợp
-SoBenhNhanNoiTru	Integer	Tổng bệnh nhân điều trị nội trú trong tháng	320
-SoBenhNhanNgoaiTru	Integer	Tổng bệnh nhân khám ngoại trú (nếu có)	780
-SoNgayGiuong	Integer	Tổng ngày giường thực tế	4100
-CongSuatSuDungGiuong	Float (%)	= (Số ngày giường thực tế / (Số giường * Số ngày trong tháng)) * 100	87.5
-SoChiDinhXN	Integer	Tổng số lượt xét nghiệm	5200
-SoChiDinhCLS	Integer	Tổng lượt cận lâm sàng (Xquang, CT, MRI, SA…)	870
-SoThuThuat	Integer	Tổng số thủ thuật nhỏ	130
-SoPhauThuat	Integer	Tổng số ca phẫu thuật	42
-DoanhThu	Numeric	Doanh thu tháng của khoa (triệu hoặc tỷ đồng)	12.5
-GhiChu	Text	Ghi chú nếu có	Có 3 ngày nghỉ Tết
+| Cột                  | Kiểu dữ liệu | Mô tả                                                                | Ví dụ                |
+| -------------------- | ------------ | -------------------------------------------------------------------- | -------------------- |
+| ThangNam             | Date / Text  | Tháng ghi nhận                                                       | `2025-01`            |
+| Khoa                 | Text         | Tên khoa                                                             | `Ngoại tổng hợp`     |
+| SoBenhNhanNoiTru     | Integer      | Tổng bệnh nhân điều trị nội trú trong tháng                          | `320`                |
+| SoBenhNhanNgoaiTru   | Integer      | Tổng bệnh nhân khám ngoại trú (nếu có)                               | `780`                |
+| SoNgayGiuong         | Integer      | Tổng ngày giường thực tế                                             | `4100`               |
+| CongSuatSuDungGiuong | Float (%)    | = (Số ngày giường thực tế / (Số giường * Số ngày trong tháng)) * 100 | `87.5`               |
+| SoChiDinhXN          | Integer      | Tổng số lượt xét nghiệm                                              | `5200`               |
+| SoChiDinhCLS         | Integer      | Tổng lượt cận lâm sàng (Xquang, CT, MRI, SA…)                        | `870`                |
+| SoThuThuat           | Integer      | Tổng số thủ thuật nhỏ                                                | `130`                |
+| SoPhauThuat          | Integer      | Tổng số ca phẫu thuật                                                | `42`                 |
+| DoanhThu             | Numeric      | Doanh thu tháng của khoa (triệu hoặc tỷ đồng)                        | `12.5`               |
+| GhiChu               | Text         | Ghi chú nếu có                                                       | `Có 3 ngày nghỉ Tết` |
+
 💡 Gợi ý mở rộng (khi có dữ liệu nhiều năm)
 Nếu có dữ liệu từ 2022–2024, bạn có thể thêm cột Nam và Thang riêng biệt để thuận tiện cho việc:
 
@@ -954,61 +998,7 @@ Mình sẽ giải thích thật dễ hiểu và thực tế trong bối cảnh b
 🧭 1. Hồi quy tuyến tính thông thường là gì?
 Ví dụ mô hình cơ bản:
 
-D
-o
-a
-n
-h
-T
-h
-u
-=
-a
-+
-b
-1
-×
-S
-o
-B
-e
-n
-h
-N
-h
-a
-n
-+
-b
-2
-×
-N
-g
-a
-y
-G
-i
-u
-o
-n
-g
-+
-b
-3
-×
-C
-L
-S
-DoanhThu=a+b 
-1
-​
- ×SoBenhNhan+b 
-2
-​
- ×NgayGiuong+b 
-3
-​
- ×CLS
+DoanhThu=a+b1​×SoBenhNhan+b2​×NgayGiuong+b3​×CLS
 → Nghĩa là: doanh thu phụ thuộc vào hoạt động điều trị.
 
 Tuy nhiên, nếu bạn dùng toàn bộ dữ liệu nhiều tháng ghép lại mà không xét đến yếu tố mùa vụ, mô hình sẽ hiểu sai vì:
@@ -1022,17 +1012,21 @@ Có tháng doanh thu tăng mạnh không phải do nỗ lực khoa, mà do mùa 
 
 Ví dụ:
 
-Biến	Giải thích	Ví dụ
-Month	Tháng trong năm (1 → 12)	1 = tháng Giêng (thường thấp), 12 = tháng 12 (cao điểm)
-Year	Năm dữ liệu (2023, 2024, 2025)	Dùng để xem xu hướng tăng trưởng qua năm
-Season (tuỳ chọn)	Mùa cao điểm / thấp điểm	“Low” (Q1, tháng 7 âm), “High” (Q4)
+| Biến                  | Giải thích                     | Ví dụ                                                   |
+| --------------------- | ------------------------------ | ------------------------------------------------------- |
+| `Month`               | Tháng trong năm (1 → 12)       | 1 = tháng Giêng (thường thấp), 12 = tháng 12 (cao điểm) |
+| `Year`                | Năm dữ liệu (2023, 2024, 2025) | Dùng để xem xu hướng tăng trưởng qua năm                |
+| `Season` *(tuỳ chọn)* | Mùa cao điểm / thấp điểm       | “Low” (Q1, tháng 7 âm), “High” (Q4)                     |
+
 📊 3. Ứng dụng thực tế cho bạn
 Giả sử bạn có bảng dữ liệu sau (đơn giản hóa):
 
-Năm	Tháng	Bệnh nhân	CLS	Doanh thu
-2024	1	1000	300	8.2
-2024	2	1200	320	8.7
-2024	12	1800	540	13.9
+| Năm  | Tháng | Bệnh nhân | CLS | Doanh thu |
+| ---- | ----- | --------- | --- | --------- |
+| 2024 | 1     | 1000      | 300 | 8.2       |
+| 2024 | 2     | 1200      | 320 | 8.7       |
+| 2024 | 12    | 1800      | 540 | 13.9      |
+
 Nếu chạy hồi quy mà không có cột “Tháng”, mô hình sẽ nghĩ doanh thu cao là do bệnh nhân tăng thôi.
 Nhưng nếu thêm biến Month, mô hình sẽ “học” được rằng:
 
@@ -1047,67 +1041,7 @@ Từ đó:
 🧠 4. Kết quả nhận được
 Bạn sẽ có mô hình dạng:
 
-D
-o
-a
-n
-h
-T
-h
-u
-=
-a
-+
-b
-1
-×
-S
-o
-B
-e
-n
-h
-N
-h
-a
-n
-+
-b
-2
-×
-C
-L
-S
-+
-b
-3
-×
-M
-o
-n
-t
-h
-+
-b
-4
-×
-Y
-e
-a
-r
-DoanhThu=a+b 
-1
-​
- ×SoBenhNhan+b 
-2
-​
- ×CLS+b 
-3
-​
- ×Month+b 
-4
-​
- ×Year
+DoanhThu=a+b1​×SoBenhNhan+b2​×CLS+b3​×Month+b4​×Year
 → cho phép dự báo doanh thu chính xác hơn theo mùa bệnh và xu hướng tăng trưởng hàng năm.
 
 Nếu bạn muốn, mình có thể tạo file Excel mẫu cho hồi quy có yếu tố mùa vụ, trong đó:
