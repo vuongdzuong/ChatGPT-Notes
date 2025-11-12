@@ -29,6 +29,7 @@ Thêm DropDownList chọn số dòng hiển thị (page size) cho GridView — v
 và GridView sẽ tự động cập nhật số dòng hiển thị mà không cần reload toàn bộ trang.
 
 🧱 Giả sử bạn đang có GridView như sau:
+```
 <asp:GridView ID="gvData" runat="server" 
     AutoGenerateColumns="False" 
     AllowPaging="True" 
@@ -41,6 +42,9 @@ và GridView sẽ tự động cập nhật số dòng hiển thị mà không c
         <asp:BoundField DataField="Khoa" HeaderText="Khoa điều trị" />
     </Columns>
 </asp:GridView>
+```
+
+
 ⚙️ Bước 1: Thêm DropDownList chọn số dòng
 Bạn có thể đặt trên hoặc dưới GridView, ví dụ đặt trên:
 
