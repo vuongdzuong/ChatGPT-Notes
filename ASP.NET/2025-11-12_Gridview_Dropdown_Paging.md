@@ -47,7 +47,7 @@ và GridView sẽ tự động cập nhật số dòng hiển thị mà không c
 
 ⚙️ Bước 1: Thêm DropDownList chọn số dòng
 Bạn có thể đặt trên hoặc dưới GridView, ví dụ đặt trên:
-
+```
 <div style="margin-bottom: 5px;">
     Hiển thị
     <asp:DropDownList ID="ddlPageSize" runat="server" AutoPostBack="True"
@@ -67,7 +67,9 @@ Bạn có thể đặt trên hoặc dưới GridView, ví dụ đặt trên:
     CssClass="gridview">
     <!-- Cột dữ liệu -->
 </asp:GridView>
+```
 ⚙️ Bước 2: Code-behind (C#)
+```
 protected void Page_Load(object sender, EventArgs e)
 {
     if (!IsPostBack)
@@ -103,7 +105,9 @@ protected void ddlPageSize_SelectedIndexChanged(object sender, EventArgs e)
     gvData.PageIndex = 0; // về trang đầu
     BindGrid();
 }
+```
 🎨 Gợi ý CSS nhẹ cho đẹp mắt
+```
 .gridview {
     width: 100%;
     border-collapse: collapse;
@@ -123,6 +127,7 @@ protected void ddlPageSize_SelectedIndexChanged(object sender, EventArgs e)
 .gridview tr:hover {
     background-color: #f1f1f1;
 }
+```
 ✅ Kết quả
 Dropdown hiển thị “10 / 20 / 50 / 100 dòng mỗi trang”
 
@@ -149,8 +154,9 @@ Mình sẽ giải thích cực kỳ dễ hiểu, theo đúng cách của một n
 
 🧩 1️⃣ "PostBack" là gì?
 Khi bạn làm một webform ASP.NET, ví dụ có nút:
-
+```
 <asp:Button ID="btnSave" runat="server" Text="Lưu dữ liệu" OnClick="btnSave_Click" />
+```
 ➡ Khi người dùng bấm nút này, trình duyệt gửi toàn bộ form về server, server chạy code btnSave_Click, sau đó trả lại toàn bộ trang HTML mới.
 
 Đó chính là PostBack toàn trang.
